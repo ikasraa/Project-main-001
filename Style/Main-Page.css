@@ -178,7 +178,18 @@ button:hover{
     width: 100%;
     
 }
-
+.container-center{
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    background-color: white;
+    width: 100%;
+    margin-top: 22px;
+    height: 285px;
+}
+.center-left{
+    width: 50%;
+}
 @media(max-width:768px){
     main{
         margin: 0 auto;
