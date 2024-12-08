@@ -190,6 +190,112 @@ button:hover{
 .center-left{
     width: 50%;
 }
+.social-media{
+    padding: 25px;
+    width: 100%;
+    height: 390px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.fab.fa-facebook {
+    font-size: 40px;      /* Icon size */
+    color: #3b5998;       /* Facebook blue color */
+    text-decoration: none; /* Remove underline */
+    /* padding: 10px; */
+    border-radius: 50%;   /* Circle around the icon */
+    transition: all 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 42%;
+    margin-top: 14px; */
+}
+.social-top{
+    width: 100%;
+    height: 60%;
+}
+.social-bot{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    justify-content: space-around;
+}
+.twitter-icon {
+    font-size: 40px; /* Set icon size */
+    color: #1DA1F2;  /* Twitter's official blue color */
+    transition: transform 0.3s ease;
+}
+.instagram-icon {
+    /* position: relative; */
+font-size: 40px;
+    /* background: #E1306C; */
+    color: #E1306C;
+    border-radius: 10px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center;  */
+  }
+  .social-text{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+    margin: 0 auto;
+    /* margin-left: 2px; */
+  }
+@media(max-width:1200px){
+    main{
+        margin: 0 auto;
+    }
+    .nav-left{
+        .mega-menu{
+            display: none;
+        }
+        .search-bar{
+width: 100px;
+
+        }
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container-left{
+        width: 100%;
+    }
+.top{
+    img{
+
+       
+        width: 50%;
+        height: 115;
+    }
+}
+.view-prof{
+    button{
+        width:70%;
+    }
+}
+.container-right{
+    width: 100%;
+}
+.window-parent{
+    flex-direction: column;
+    width: 100%;
+}
+.window-center{
+    width: 100%;
+}
+.window-left{
+    width: 100%;
+}
+.window-right{
+    width: 100%;
+}
+    }
+
 @media(max-width:768px){
     main{
         margin: 0 auto;
