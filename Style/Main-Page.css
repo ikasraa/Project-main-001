@@ -238,6 +238,63 @@ font-size: 40px;
     /* justify-content: center; */
     /* align-items: center;  */
   }
+  .email-chart{
+    width: 100%;
+    height: 460px;
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 25px;
+  }
+  .chart-text{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: -30px;
+  }
+  .week{
+border-radius: 5px;
+/* background-color: darkblue; */
+height: 50px;
+line-height: 30px;
+  }
+  .year{
+    border-radius: 5px;
+    /* background-color: darkblue; */
+    height: 50px;
+    line-height: 30px;
+      }
+      .month{
+        border-radius: 5px;
+        /* background-color: darkblue; */
+        height: 50px;
+        line-height: 30px;
+          }
+
+.my-button:hover{
+    color: #2d3f9b;
+
+}
+
+
+.my-button{
+    width: 120px;
+    height: 80px;
+    border-radius: 5px;
+}
+.my-button:focus{
+    background-color: #616fe8 !important; 
+    color: white;
+
+}
+
+  .chart-day{
+    display: flex;
+    justify-content: end;
+  }
   .social-text{
     display: flex;
     justify-content: space-around;
@@ -245,6 +302,9 @@ font-size: 40px;
     
     margin: 0 auto;
     /* margin-left: 2px; */
+  }
+  .chart-category{
+    line-height: 40px;
   }
 @media(max-width:1200px){
     main{
