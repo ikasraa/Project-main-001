@@ -12,7 +12,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="Style/Main-Page.css">
-    
+   
 </head>
 
 <body>
@@ -177,27 +177,112 @@
                 <div class="email-chart">
                     <h3 style="font-weight: 600; font-size: 16px; ;">Email Sent</h3>
                     <div class="chart-text">
-                        
+
 
 
                         <div class="week">
-                            <button class="my-button" style="width: 100px; height: 40px; background-color: transparent    ; font-size: 14px; font-weight: 400;">Week</button>
+                            <button class="my-button"
+                                style="width: 100px; height: 40px; background-color: transparent    ; font-size: 14px; font-weight: 400;">Week</button>
                         </div>
                         <div class="month">
-                            <button class="my-button" style="width: 100px; height: 40px; background-color: transparent    ; font-size: 14px; font-weight: 400;">Month</button>
+                            <button class="my-button"
+                                style="width: 100px; height: 40px; background-color: transparent    ; font-size: 14px; font-weight: 400;">Month</button>
                         </div>
                         <div class="year">
-                            <button class="my-button" style="width: 100px; height: 40px; background-color: transparent    ; font-size: 14px; font-weight: 400;">Year</button>
+                            <button class="my-button"
+                                style="width: 100px; height: 40px; background-color: transparent    ; font-size: 14px; font-weight: 400;">Year</button>
                         </div>
                     </div>
                     <div class="chart-category">
-
+                        <canvas id="myChart" class="my-chart"></canvas>
                     </div>
+                </div>
+                <div class="activity-chart">
+                    <div class="activity">
+                        <h3 style="font-weight: 600; font-size: 17px;">Activity</h3>
+                        <div class="22-nov" style="margin-top: 40px;">
+                            <h3 style="font-size: 14px; font-weight: 500; margin-left: 20px;"> 22 Nov <a href=""
+                                    style="font-size: 17px; text-decoration: none; color: #0d6efd;margin-left:7px;">⭢</a><a
+                                    href=""
+                                    style="margin-left: 10px; color: rgb(107, 102, 102); text-decoration: none;">Responded
+                                    to need “Volunteer Activities”</a></h3>
+                        </div>
+                        <div class="17 nov" style="margin-top: 40px;">
+                            <h3 style="font-size: 14px; font-weight: 500; margin-left: 20px;">17 Nov <a href=""
+                                    style="font-size: 17px; text-decoration: none; color: #0d6efd;margin-left:7px;">⭢</a><a
+                                    href=""
+                                    style="margin-left: 10px; color: rgb(107, 102, 102); text-decoration: none;">Everyone
+                                    realizes why a new common language would be desirable... Read More</a></h3>
+                        </div>
+                        <div class="15-nov" style="margin-top: 60px;">
+                            <h3 style="font-size: 14px; font-weight: 500; margin-left: 20px;">15 Nov <a href=""
+                                    style="font-size: 17px; text-decoration: none; color: #0d6efd;margin-left:7px;">⭢</a><a
+                                    href=""
+                                    style="margin-left: 10px; color: rgb(107, 102, 102); text-decoration: none;">Joined
+                                    the group “Boardsmanship Forum”</a></h3>
+                        </div>
+                        <div class="22-nov" style="margin-top: 40px;">
+                            <h3 style="font-size: 14px; font-weight: 500; margin-left: 20px;">22 Nov <a href=""
+                                    style="font-size: 17px; text-decoration: none; color: #0d6efd;margin-left:7px;">⭢</a><a
+                                    href=""
+                                    style="margin-left: 10px; color: rgb(107, 102, 102); text-decoration: none;">Responded
+                                    to need “In-Kind Opportunity”</a></h3>
+                        </div>
+                        <button
+                            style="height: 30px ; border-radius: 5px; font-size: 13px; color: white;  margin-top: 42px; width: 120px; margin-left: 40%; ">View
+                            More ⟶</button>
+                    </div>
+                    <div class="top-sell">
+                        <h3 style="font-family: 500; font-size: 16px;">Top Cities Selling Product
+                        </h3>
+                        <div class="pin-icon" style="margin-top: 30px; margin-left: 45%; ">
+                            <div class="pin-head"></div>
+                            <div class="pin-body"></div>
+                            <h3 style="font-family: 500; font-size: 27px; margin-top: 90px; margin-left: -10px;">1,456
+                            </h3>
+                            <h3
+                                style="text-wrap: nowrap; margin-left: -14px; font-size: 14px; font-weight: 400; margin-top: 10px;">
+                                San Francisco
+                            </h3>
+
+                        </div>
+                        <div class="city-chart" style="margin-top: 120px;">
+                            <div class="san" style="margin-top: 15px; ">
+                                <h3 style="font-weight: 400; font-size: 15px; text-wrap: nowrap;">San Francisco</h3>
+                                <a href="" style="margin-left: 45px; text-decoration: none; font-size: 18px; color: #495057;">1,456</a>
+                                </a>
+                                <div class="blue-chart" style="margin-left: 40px;"></div>
+                            </div>
+
+                            <div class="los" style="margin-top: 22px; ">
+                                <h3 style="font-weight: 400; font-size: 15px;">Los Angeles </h3>
+                                <a href="" style="margin-left: 45px; text-decoration: none; font-size: 18px; color: #495057;">	
+                                    1,123</a>
+                            </a>
+                            <div class="green-chart" style="margin-left: 40px;"></div>
+                            </div>
+                            <div class="los" style="margin-top: 22px; ">
+                                <h3 style="font-weight: 400; font-size: 15px;">Los Angeles </h3>
+                                <a href="" style="margin-left: 45px; text-decoration: none; font-size: 18px; color: #495057;">	
+                                    1,026
+</a>
+                            </a>
+                            <div class="yellow-chart" style="margin-left: 40px;"></div>
+                            </div>
+
+   
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
+
+
 </html>
