@@ -16,10 +16,13 @@
 </head>
 
 <body>
-    <nav>
+    <div class="nav-right-open" id="side-bar">
+        <!-- Soon... -->
+    </div>
+    <nav class="margin-20" id="nav">
 
         <div class="nav-left">
-            <span class="material-symbols-outlined sidebar-toggle-btn" style="margin-top: 4px;">
+            <span class="material-symbols-outlined sidebar-toggle-btn" style="margin-top: 4px;cursor: pointer;" id="side-bar-btn">
                 menu
             </span>
             <div class="search-container" style="font-weight: 300;">
@@ -29,11 +32,9 @@
                 <h5 style="font-weight: 300; margin-top: 6px;">Mega Menu</h5>
             </div>
         </div>
-        <div class="nav-right">
-            <!-- Soon... -->
-        </div>
+ 
     </nav>
-    <main>
+    <main class="margin-22" id="main">
 
         <div class="container" style="margin-top: 20px;">
             <div class="container-left">
@@ -310,15 +311,15 @@
                             </div>
 
                             <div class="los" style="margin-top: 22px; ">
-                                <h3 style="font-weight: 400; font-size: 15px;">Los Angeles </h3>
-                                <a href="" style="margin-left: 45px; text-decoration: none; font-size: 18px; color: #495057;">	
+                                <h3 style="font-weight: 400; font-size: 15px; text-wrap: nowrap;">Los Angeles </h3>
+                                <a href="" style=" margin-left: 45px; text-decoration: none; font-size: 18px; color: #495057;">	
                                     1,123</a>
                             </a>
                             <div class="green-chart" style="margin-left: 40px;"></div>
                             </div>
                             <div class="los" style="margin-top: 22px; ">
-                                <h3 style="font-weight: 400; font-size: 15px;">Los Angeles </h3>
-                                <a href="" style="margin-left: 45px; text-decoration: none; font-size: 18px; color: #495057;">	
+                                <h3 style="font-weight: 400; font-size: 15px;">San Diego </h3>
+                                <a href="" style="margin-left: 45px; text-decoration: none; font-size: 18px; color: #495057; ">	
                                     1,026
 </a>
                             </a>
@@ -337,6 +338,7 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="index.js"></script>
+    <script src="sidebar.js"></script>
 </body>
 
 
